@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout"
+    tools:context=".EditProfileActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar"
+        android:background="?android:attr/windowBackground">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolBar"
+            android:background="?android:attr/windowBackground">
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_close_foreground"
+                    android:id="@+id/imgClose"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Profile"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="18sp"
+                    android:layout_toEndOf="@+id/imgClose"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SAVE"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="18sp"
+                    android:id="@+id/save"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:max="100"
+            android:backgroundTint="@color/white"
+            android:layout_below="@+id/toolBar"
+            android:indeterminateTint="#1a09d6"
+            android:layout_marginTop="-7dp"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_person_foreground"
+                android:id="@+id/imgProfile"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Photo"
+                android:layout_gravity="center"
+                android:id="@+id/changePhoto"
+                android:textSize="18sp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/fullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Full Name"
+                app:met_floatingLabel="normal" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:text="user Name"
+                app:met_floatingLabel="normal" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Bio"
+                app:met_floatingLabel="normal" />
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</LinearLayout>

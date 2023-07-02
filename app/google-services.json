@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "470526635377",
+    "project_id": "first-fb-project-846d8",
+    "storage_bucket": "first-fb-project-846d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470526635377:android:0b39070eaea19a095c5ad0",
+        "android_client_info": {
+          "package_name": "com.tomlee.demoinsta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470526635377-ninprqb66rvd1a5d8imr0k6i0vkeskm1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM925GLtnIpUzhFHZPT2VXr_QsKrie9BI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470526635377-ninprqb66rvd1a5d8imr0k6i0vkeskm1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470526635377:android:95d657a98dc815a75c5ad0",
+        "android_client_info": {
+          "package_name": "com.tomlee.serverandsql"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470526635377-ninprqb66rvd1a5d8imr0k6i0vkeskm1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM925GLtnIpUzhFHZPT2VXr_QsKrie9BI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470526635377-ninprqb66rvd1a5d8imr0k6i0vkeskm1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_Container"
+        app:labelVisibilityMode="unlabeled"
+        android:elevation="0dp"
+        android:background="@android:color/transparent"
+        android:layout_above="@+id/parent"/>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:id="@+id/parent"
+        android:elevation="0dp"
+        app:labelVisibilityMode="unlabeled"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_navigation"
+            app:itemIconTint="@color/black"
+            app:labelVisibilityMode="unlabeled"
+            android:background="@android:color/transparent"
+            app:menu="@menu/bottom_menu"
+            app:itemIconSize="60sp"
+            android:elevation="0dp"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</RelativeLayout>
